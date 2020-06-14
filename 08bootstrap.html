@@ -28,6 +28,10 @@
             #box6{
                 display: none;
             }
+            #pics3.container{
+                width: 25%;
+                float: left;
+            }
         }
         /*手机端*/
         @media screen and (max-width: 767px) {
@@ -103,6 +107,10 @@
             display: flex;
             line-height: 25px;
         }
+        #box10{
+            width:75%;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
@@ -135,7 +143,7 @@
                     <div id="pics3" class="col-xs-0 col-md-3 container" style="background-color:rgb(225, 225, 225);">
                         <img src="img/logo.png" alt="">
                     </div>
-                    <div class="col-xs-12 col-md-9" style="background-color:rgb(225, 225, 225);">
+                    <div class="col-xs-12 col-md-9" id="box10" style="background-color:rgb(225, 225, 225);">
                         <ul class="nav navbar-nav">
                             <li class="top01"><a href="#">首页</a></li>
                             <li class="top01"><a href="#">热门路线</a></li>
