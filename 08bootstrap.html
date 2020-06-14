@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>    
+    <script src="js/bootstrap.min.js"></script>  
+    <style>
+        /*PC端*/
+        @media screen and (min-width: 768px) {
+            #p6,#p7{
+                display: none;
+            } 
+            #car2{
+                display: none;
+            }
+            #route2,#route4{
+                display: none;
+            }
+            #btn1{
+                display: none;
+            }
+            #txt1,#txt2,#txt3,#txt4{
+                display: none;
+            }
+            #box6{
+                display: none;
+            }
+        }
+        /*手机端*/
+        @media screen and (max-width: 767px) {
+            #p1,#p2,
+            #p3,
+            #p4,
+            #p5 {
+                display: none;
+            }
+            #car1{
+                display: none;
+            }
+            #route1,#route3{
+                display:none;
+            }
+            #pics1,#pics0,#pics2,#pics3{
+                display:none;
+            }
+            #box1,#box2,#box3,#box4{
+                display:none;
+            }
+        }
+        li.top01 a:hover{
+            color: #ff3300;
+            border-bottom: 2px solid #ff3300;
+        }
+        .top01{
+            margin-left:35px ;
+        }
+        .pics{
+            position: relative;
+            top: -69px;
+            left: 15px;
+            background-color: rgb(40,40,40);
+            opacity: 0.9;
+        }
+        .note{
+            color:#fff; 
+            margin-left: 10px;
+        }
+        #btn2{
+            border: 1px solid rgb(192, 192, 192);
+            background-color: #fff;
+            margin-top: 10px;
+        }
+        .note1{
+            background-color: rgb(40,40,40);
+            width: 100%;
+            position: relative;
+        }
+        .ico1{
+            background-color:#18356e;
+            height: 380px;
+            
+        }
+        .line4,.line3,.line2,.line1{
+            margin-left: 10px;
+        }
+        span.line4 a,span.line3 a,span.line2 a{
+            text-decoration: none;
+            color: #fff;
+        }
+        p.line1 a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .box5{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .box5-1{
+            flex-wrap:wrap;
+            display: flex;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" id="pics0">
+        <div class="row" style="background-color: rgb(40,40,40);">
+            <div class="col-ld-12">
+                <span style="float: right;margin-right: 50px;;margin-top: 11px;color: #ffffff;">注册</span>
+                <span style="float: right;margin-right: 10px;margin-top: 11px; color: #ffffff;">|</span>
+                <span style="float: right;margin-right: 14px;margin-top: 11px;color: #ffffff;">请登录</span>
+                <span style="float: right;margin-right: 50px;margin-top: 11px;color: #ffffff;">400-808-8682</span>
+                <img class="img-responsive" alt="Responsive img" src="img/tell.png" style="float: right; margin-right:10px; margin-top:5px;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#col-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle navbar-right" style="color:#fff; background: #ff3300; margin-left: -250px;">快速定制</button>
+                <img type="img" class="navbar-toggle" src="img/logo.png" alt="" style="margin-right: 190px;border-color: #f8f8f8;">
+            </div>
+            <div class="collapse navbar-collapse" id="col-1" style="margin: -5px -15px 0px -20px">
+                
+                <div class="row">
+                    <div id="pics3" class="col-xs-0 col-md-3 container" style="background-color:rgb(225, 225, 225);">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="col-xs-12 col-md-9" style="background-color:rgb(225, 225, 225);">
+                        <ul class="nav navbar-nav">
+                            <li class="top01"><a href="#">首页</a></li>
+                            <li class="top01"><a href="#">热门路线</a></li>
+                            <li class="top01"><a href="#">签证推荐</a></li>
+                            <li class="top01"><a href="#">使命愿景</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="carousel slide" data-ride="carousel" style="margin:-20px -15px 0px -15px">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/banner.jpg" style="width: 100%;">
+                    <div class="carousel-caption">
+                        <p id="p1" class="h1 text-left">悠游古欧洲 遍览德法瑞意</p>
+                        <p id="p2" class="text-left">—————————————————</p>
+                        <p id="p3" class="text-left">巴黎卢浮宫、塞纳河游船、凡尔赛宫</p>
+                        <p id="p4" class="text-left">少女峰、大运河游船、金色列车、西庸城堡</p>
+                        <p id="p5" class="text-left">—————————————————————</p>
+                        <p id="p7" class="h3 text-left">悠游古欧洲 遍览德法瑞意</p>
+                        <p id="p6" class="text-left">全程升级热早+1晚5星级酒店</p>
+                        <div class="input-group" style=" border:2px solid rgb(40,40,40);" >
+                            <span class="input-group-addon" style="opacity: 1;">
+                                <img src="img/position.png" alt="">
+                                <span>目的地</span>
+                            </span>
+                            <input type="text" class="form-control" placeholder="    |  日本  美国  英国  地中海" style="height: 44px;">
+                            <span class="input-group-addon" style="background-color:#ff3300; border:1px solid #ff3300">
+                                <a href="#"><img src="img/search.png"></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(225, 225, 225);">
+        <div id="car1" class="container">
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-xs-10">
+                    <img src="img/Sbanner2.png" class="img-responsive" style="width:1200px ; height: 365px;" >
+                    </div>
+                <div class="col-xs-2 container" style="background-color: #18356e;height:365px;margin-left: -30px;">
+                    <div class="row">
+                        <img src="img/car.png" alt="" class="img-responsive" style="margin: 0 auto; margin-top: 85px;">
+                        <p class="h3" style="color: #fff;text-align: center;">车辆接送</p>
+                        <button type="button" class="btn btn-warning btn-lg" style="display:block;margin:0 auto; background-color: #18356e;border: 2px solid #fff;margin-top: 20px;">
+                            查看详情
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="car2" class="container" style="width: 100%;">
+            <div style="background-color: #fff; margin-left: -15px; margin-right: -15px;">
+                <img src="img/carH.png" alt="" style="margin-top: 45px; margin-left: 30px;">
+                <p class="h3" style="margin-left: 140px;margin-top: -90px;color: #1c5080;">机场接送 省钱省心</p>
+                <p class="h5" style="margin-left: 140px;">提供上海、苏州、无锡各市</p>
+                <p class="h5" style="margin-left: 140px;">往返机场、码头接送服务，更有包车服务</p>
+                <button type="button" class="btn" style="border: 1px solid rgb(225, 225, 225);background-color: #fff;margin-left: 380px;margin-top: -130px;">
+                    查看详情
+                </button>
+            </div>
+        </div>
+
+        <div id="route1" class="container">
+            <div style="margin: 10px auto;width:200px;">
+                <p class="h2">&nbsp热&nbsp门&nbsp路&nbsp线</p>
+                <p class="h4">Popular tourist routes</p>
+            </div>
+        </div>
+        <div id="route2" class="container" style="padding-bottom: 15px; margin-top: 15px; background-color: #fff;">
+            <div style="margin-top: 30px; border-bottom: 1px solid rgb(225, 225, 225);">
+                <span style="border-left: 4px solid #ff3300;" class="h3">&nbsp&nbsp&nbsp热门线路</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <img src="img/hot1.jpg" alt="" class="img-responsive" style="margin-top: 15px;">
+                    <div class="note1 row" style="margin: 0 auto;">
+                        <div class="col-xs-12">
+                            </br>
+                            <span class="note h4">海南三亚5天4晚，纯玩、4晚红树林度假王国</br></span>
+                            <span class="note h4">￥<big><big>2500</big></big>/人起</span>
+                        </div>
+                    </div>
+
+                    <img src="img/hot2.jpg" alt="" class="img-responsive" style="margin-top: 5px;">
+                    <div class="note1">
+                        </br>
+                        <span class="note h4">德法意瑞欧洲4国，ABCD任意线路由您挑选</br></span>
+                        <span class="note h4">￥<big><big>7999</big></big>/人起</span></br>&nbsp</span>
+                    </div>
+                </div>
+                <div id="pics1" class="col-xs-0 col-md-6" style="margin-left: -25px;">
+                    <img src="img/hot3.jpg" alt="" class="img-responsive" style="margin-top: 15px; margin-left: 15px;">
+                    <div class="pics">
+                        </br>
+                        <span class="note h4">曼谷+芭提雅 国际五星，赠送2220大礼包，绝无自费</br></span>
+                        <span class="note h4">￥<big><big>2799</big></big>/人起</span></span>
+                    </div>
+                    <img src="img/hot4.jpg" alt="" class="img-responsive" style="margin-top:-60px; margin-left: 15px;">
+                    <div class="pics">
+                        </br>
+                        <span class="note h4">日本本州游 樱花、寿司、温泉、美食</br></span>
+                        <span class="note h4">￥<big><big>5399</big></big>/人起</span></span>
+                    </div>
+                    <img src="img/hot5.jpg" alt="" class="img-responsive" style="margin-top: -60px; margin-left: 15px;">
+                    <div class="pics">
+                        </br>
+                        <span class="note h4">斯里兰卡7天6晚全景游 保证入住2晚香格里拉</br></span>
+                        <span class="note h4">￥<big><big>7999</big></big>/人起</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="btn1" class="col-xs-3 col-xs-offset-4">
+                    <button type="button" class="btn btn-lg" id="btn2">
+                        查看更多 >
+                    </button>
+                </div>
+            </div>
+            <div id="route3" class="container">
+                <div style="margin: 10px auto;width:270px;">
+                    <p class="h2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp使命与愿景</p>
+                    <p class="h4">让旅游回归本质，体验纯粹旅游</p>
+                </div>
+            </div>
+            <div id="route4" class="container" style="padding-bottom: 15px; margin-top: 15px; background-color: #fff;">
+                <div style="margin-top: 30px; border-bottom: 1px solid rgb(225, 225, 225);">
+                    <span style="border-left: 4px solid #ff3300;" class="h3">&nbsp&nbsp&nbsp使命与愿景:<small>让旅游回归本质，体验纯粹旅游</small></span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;" id="txt1">
+                <div class="col-xs-12">
+                    <img src="img/mission1.jpg" alt="" class="img-responsive" style="height: 350px;width: 715px;">
+                </div>
+            </div>
+            <div class="container row" id="txt2">
+                <div class="col-xs-12">
+                    <h3 style="text-align: center;">--服务理念--</h3>
+                    <p class="text-justify">“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案、陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务。</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;" id="txt3">
+                <div class="col-xs-12">
+                    <img src="img/mission2.jpg" alt="" class="img-responsive" style="height: 250px;width: 715px;">
+                </div>
+            </div>
+            <div class="container" id="txt4">
+                <div class="col-xs-12">
+                    <p class="h3" style="text-align: center;">--服务优势--</p>
+                </div>
+                <div class="row" style="border-bottom: 1px solid rgb(165, 165, 165)">
+                    <div class="col-xs-3 col-xs-offset-1" style="height: 130px; margin-top: 55px;">
+                        <div>
+                            <img src="img/icon11.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-7 col-xs-offset-1" style="height: 130px;">
+                        <p style="margin-top: 40px;line-height:25px;">旅游达人精心设计、基于口碑反复打磨，<br> 告别人山人海鸡肋景点。<br> 全网最好，敢跟任何产品比</p>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: 1px solid rgb(165, 165, 165)">
+                    <div class="col-xs-3 col-xs-offset-1" style="height: 130px;margin-top: 65px;">
+                        <div>
+                            <img src="img/icon22.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-7 col-xs-offset-1" style="height: 130px;">
+                        <p style="margin-top: 70px;line-height:25px;">不推自费，<br>不进垃圾购物店和伪景点</p>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: 1px solid rgb(165, 165, 165)">
+                    <div class="col-xs-3 col-xs-offset-1" style="height: 130px;margin-top: 60px;">
+                        <div>
+                            <img src="img/icon33.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-7 col-xs-offset-1" style="height: 130px;">
+                        <p style="margin-top: 70px;line-height:25px;">独立成团不散拼，<br> 只跟亲朋好友一起玩，每天发团 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="box1" class="row">
+                <div class="col-xs-5">
+                    <img src="img/mission1.jpg" alt="" >
+                </div>
+                <div class="col-xs-7" style="background-color: #18356e;height:350px ;">
+                    <div class="row" style="margin-top: 60px;color: #fff;">
+                        <div class="col-xs-8 col-xs-offset-2 container">
+                            <p class="h3" style="text-align:center;">服务理念及优势</p></br></br></br>
+                            <span class="h5" style="text-align:center;">“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案、陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="box2" class="row" style="margin-right: -30px;margin-top: 10px;">
+                <div class="col-xs-12">
+                    <img src="img/mission2.jpg" alt="" class="img-responsive">
+                </div>
+            </div>
+            <div id="box3" class="row" style="margin-left: 1px;">
+                <div class="col-xs-4 ico1">
+                    <div class="row" style="margin-top: 100px; color: #fff; background-color: #18356e;">
+                        <div class="col-xs-5 col-xs-offset-4">
+                            <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="row"style="margin-top: 10px;"><div class="col-xs-5 col-xs-offset-4">
+                            <span>&nbsp</span>
+                        </div></div>
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-offset-4">
+                                <span>&nbsp品质行程</span>
+                            </div>
+                        </div>
+                        <div class="container" style="padding: 0%; position: relative;left: -15px; top: 50px; height: 60px; width: 280px; color: #fff; background-color: #18356e;">
+                            <p style="text-align: center;">旅游达人精心设计、基于口碑反复打磨，</p><p style="text-align: center;">全网最好，敢跟任何产品比</p>
+                        </div>
+                        <div class="container" style="padding: 0%; position: relative; left: -77px; top: -216px; height: 60px; width: 80px; color: #fff; background-color: #18356e;">
+                        <img src="img/rorate.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 ico1">
+                    <div class="row" style="margin-top: 90px; color: #fff; background-color: #18356e;">
+                        <div class="col-xs-5 col-xs-offset-4">
+                            <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="row"style="margin-top: 10px;"><div class="col-xs-5 col-xs-offset-4">
+                            <span>&nbsp</span>
+                        </div></div>
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-offset-4">
+                                <span>&nbsp品质消费</span>
+                            </div>
+                        </div>
+                        <div class="container" style="padding: 0%; position: relative;left: -15px; top: 50px; height: 60px; width: 280px; color: #fff; background-color: #18356e;">
+                            <p style="text-align: center;">不推自费，</p><p style="text-align: center;">不进垃圾购物店和伪景点</p>
+                        </div>
+                        <div class="container" style="padding: 0%; position: relative; left: -77px; top: -220px; height: 60px; width: 80px; color: #fff; background-color: #18356e;">
+                        <img src="img/rorate.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 ico1">
+                    <div class="row" style="margin-top: 100px; color: #fff; background-color: #18356e;">
+                        <div class="col-xs-5 col-xs-offset-4">
+                            <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="row"style="margin-top: 10px;"><div class="col-xs-5 col-xs-offset-4">
+                            <span>&nbsp</span>
+                        </div></div>
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-offset-4">
+                                <span>&nbsp品质小团</span>
+                            </div>
+                        </div>
+                        <div class="container" style="padding: 0%; position: relative; left: -15px; top: 50px; height: 60px; width: 280px; color: #fff; background-color: #18356e;">
+                            <p style="text-align: center;">独立成团不散拼，</p><p style="text-align: center;">只跟亲朋好友一起玩，每天发团</p>
+                        </div>
+                        <div class="container" style="padding: 0%; position: relative; left: -77px; top: -216px; height: 60px; width: 80px; color: #fff; background-color: #18356e;">
+                        <img src="img/rorate.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="box4" style="margin: 0px -15px 0px -15px; background-color: #000;color: #fff;">
+                <div class="container" style="height:370px;">
+                    <div class="row" style="text-align: center;margin-top: 50px;">
+                        <div class="col-xs-1">
+                            <p>合作伙伴</p>
+                        </div>
+                        <div class="col-xs-1" style="margin-left: 10px;"><img src="img/xiecheng.png" alt="" class="img-responsive">
+                            <p class="line1" style="margin-left: 1px; width: 60px;"><a href="">携程网</a></p>
+                        </div>
+                        <div class="col-xs-1" style="margin-left: 50px;"><img src="img/feizhu.png" alt="" class="img-responsive">
+                            <p class="line1" style="margin-left: 1px; width: 60px;"><a href="">阿里飞猪</a></p>
+                        </div>
+                        <div class="col-xs-1" style="margin-left: 50px;"><img src="img/quna.png" alt="" class="img-responsive">
+                            <p class="line1" style="margin-left: 1px; width: 60px;"><a href="">去哪儿</a></p>
+                        </div>
+                        <div class="col-xs-1" style="margin-left: 50px;"><img src="img/suzhou.png" alt="" class="img-responsive">
+                            <p class="line1" style="margin-left: 1px; width: 70px;"><a href="">苏州旅游局</a></p>
+                        </div>
+                    </div>
+                    <div class="row box5">
+                        <div class="col-xs-1">
+                            <p>热门位置</p>
+                        </div>
+                        <div class="col-xs-11 box5-1">
+                            <span class="line2"><a href="#">韩国</a></span>
+                            <span class="line2"><a href="#">日本</a></span>
+                            <span class="line2"><a href="#">菲律宾</a></span>
+                            <span class="line2"><a href="#">越南</a></span>
+                            <span class="line2"><a href="#">老挝</a></span>
+                            <span class="line2"><a href="#">柬埔寨</a></span>
+                            <span class="line2"><a href="#">泰国</a></span>
+                            <span class="line2"><a href="#">马来西亚</a></span>
+                            <span class="line2"><a href="#">新加坡</a></span>
+                            <span class="line2"><a href="#">印度</a></span>
+                            <span class="line2"><a href="#">印度尼西亚</a></span>
+                            <span class="line2"><a href="#">斯里兰卡</a></span>
+                            <span class="line2"><a href="#">土耳其</a></span>
+                            <span class="line2"><a href="#">阿联酋</a></span>
+                            <span class="line2"><a href="#">西班牙</a></span>
+                            <span class="line2"><a href="#">意大利</a></span>
+                            <span class="line2"><a href="#">希腊</a></span>
+                            <span class="line2"><a href="#">法国</a></span>
+                            <span class="line2"><a href="#">比利时</a></span>
+                            <span class="line2"><a href="#">荷兰</a></span>
+                            <span class="line2"><a href="#">英国</a></span>
+                            <span class="line2"><a href="#">瑞士</a></span>
+                            <span class="line2"><a href="#">奥地利</a></span>
+                            <span class="line2"><a href="#">德国</a></span>
+                            <span class="line2"><a href="#">匈牙利</a></span>
+                            <span class="line2"><a href="#">俄罗斯</a></span>
+                            <span class="line2"><a href="#">捷克</a></span>
+                            <span class="line2"><a href="#">芬兰</a></span>
+                            <span class="line2"><a href="#">葡萄牙</a></span>
+                            <span class="line2"><a href="#">冰岛</a></span>
+                            <span class="line2"><a href="#">美国</a></span>
+                            <span class="line2"><a href="#">加拿大</a></span>
+                            <span class="line2"><a href="#">巴西</a></span>
+                            <span class="line2"><a href="#">阿根廷</a></span>
+                            <span class="line2"><a href="#">澳大利亚</a></span>
+                            <span class="line2"><a href="#">新西兰</a></span>
+                        </div>
+                    </div>
+                    <div class="row box5">
+                        <div class="col-xs-1">
+                            <p>主要服务</p>
+                        </div>
+                        <div class="col-xs-11 box5-1">
+                            <span class="line3"><a href="#">海岛度假</a></span>
+                            <span class="line3"><a href="#">历史文化</a></span>
+                            <span class="line3"><a href="#">探索冒险</a></span>
+                            <span class="line3"><a href="#">美食购物</a></span>
+                            <span class="line3"><a href="#">都市生活</a></span>
+                            <span class="line3"><a href="#">海外游学</a></span>
+                            <span class="line3"><a href="#">邮轮度假</a></span>
+                            <span class="line3"><a href="#">蜜月摄影</a></span>
+                            <span class="line3"><a href="#">亲子乐园</a></span>
+                        </div>
+                    </div>
+                    <div class="row box5">
+                        <div class="col-xs-1">
+                            <p>友情链接</p>
+                        </div>
+                        <div class="col-xs-11 box5-1">
+                            <span class="line4"><a href="#">马蜂窝</a></span>
+                            <span class="line4"><a href="#">穷游</a></span>
+                            <span class="line4"><a href="#">booking</a></span>
+                            <span class="line4"><a href="#">苏州旅游局</a></span>
+                            <span class="line4"><a href="#">驴友网</a></span>
+                            <span class="line4"><a href="#">吾爱全球旅游中心</a></span>
+                            <span class="line4"><a href="#">酒店团购</a></span>
+                            <span class="line4"><a href="#">携程旅游攻略</a></span>
+                            <span class="line4"><a href="#">天巡职航在线</a></span>
+                            <span class="line4"><a href="#">满天飞旅游网</a></span>
+                            <span class="line4"><a href="#">中国旅游网</a></span>
+                            <span class="line4"><a href="#">澳乐网</a></span>
+                            <span class="line4"><a href="#">背包兔旅游行程</a></span>
+                            <span class="line4"><a href="#">出境旅游</a></span>
+                            <span class="line4"><a href="#">国际酒店</a></span>
+                            <span class="line4"><a href="#">广州旅行社</a></span>
+                            <span class="line4"><a href="#">出境旅游</a></span>
+                            <span class="line4"><a href="#">517旅行</a></span>
+                            <span class="line4"><a href="#">花生游</a></span>
+                            <span class="line4"><a href="#">家园网</a></span>
+                            <span class="line4"><a href="#">海外婚礼</a></span>
+                        </div>
+                    </div>
+                </div>
+                <hr style="color: rgb(165, 165, 165)">
+                <div class="container">
+                    <div class="row" style="margin: 10px auto; text-align: center; padding-bottom: 40px;">
+                        <div class="col-xs-6  col-xs-offset-3 ">
+                            <p>2020&nbsp&nbsp&nbsp@苏州英华国际旅游有限公司 版权所有</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="box6" class="container" style="background-color: rgb(40,40,40);margin: 0 -15px 0 -15px;">
+                <div class="row" style="color: #fff; margin: 10px auto; text-align: center; padding-bottom: 80px;padding-top: 80px;">
+                    <div class="col-xs-9  col-xs-offset-1 ">
+                        <p>苏ICP备号、2020</p>
+                        <p>@苏州英华国际旅游有限公司 版权所有</p>
+                        <p>技术支持 杭州科技</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
